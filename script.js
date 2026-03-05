@@ -1,67 +1,67 @@
 // Animal definitions and their characteristics
 const animals = {
     eagle: {
-        emoji: '🦅',
+        image: 'Animal Images/Bald Eagle.jpg',
         name: 'Eagle',
         traits: ['visionary', 'leader', 'strategic', 'independent', 'ambitious'],
         description: 'you possess exceptional strategic vision and see opportunities where others see obstacles. Like the eagle that flies high, you have a broad perspective of situations and natural leadership ability. Your ambition and determination lead you to reach great heights.'
     },
     lion: {
-        emoji: '🦁',
+        image: 'Animal Images/Lion.jpg',
         name: 'Lion',
         traits: ['leader', 'courageous', 'confident', 'protective', 'decisive'],
         description: 'you demonstrate courage and confidence in your decisions. Like the lion, you are a natural leader who inspires and protects your team. Your commanding presence and ability to make difficult decisions make you someone people trust.'
     },
     wolf: {
-        emoji: '🐺',
+        image: 'Animal Images/Wolf.jpg',
         name: 'Wolf',
         traits: ['loyal', 'teamwork', 'strategic', 'protective', 'communicative'],
         description: 'you deeply value teamwork and loyalty. Like the wolf that hunts in packs, you understand the power of collaboration and are a reliable team member. Your ability to communicate and work together brings strength to the group.'
     },
     bee: {
-        emoji: '🐝',
+        image: 'Animal Images/Bee.jpg',
         name: 'Bee',
         traits: ['hardworking', 'organized', 'collaborative', 'dedicated', 'productive'],
         description: 'you are extremely dedicated and productive in what you do. Like the bee that works tirelessly for the hive, you consistently contribute to collective success. Your organization and focus on results are admirable and inspiring.'
     },
     rabbit: {
-        emoji: '🐰',
+        image: 'Animal Images/rabbit.jpg',
         name: 'Rabbit',
         traits: ['agile', 'creative', 'adaptable', 'energetic', 'fast'],
         description: 'you are agile and adapt quickly to new situations. Like the rabbit, you have contagious energy and creativity to find innovative solutions. Your ability to think fast and act with ease sets you apart in dynamic environments.'
     },
     dog: {
-        emoji: '🐕',
+        image: 'Animal Images/Dog.jpg',
         name: 'Dog',
         traits: ['loyal', 'friendly', 'teamwork', 'dedicated', 'protective'],
         description: 'you are extremely loyal and reliable. Like the dog, you are the team\'s best friend, always present and dedicated. Your friendly nature and willingness to help create a positive environment around you.'
     },
     cat: {
-        emoji: '🐱',
+        image: 'Animal Images/Cat.jpg',
         name: 'Cat',
         traits: ['independent', 'curious', 'observant', 'strategic', 'adaptable'],
         description: 'you possess admirable independence and natural curiosity. Like the cat, you are observant and strategic, analyzing situations before acting. Your ability to work autonomously and adapt to different contexts is impressive.'
     },
     dolphin: {
-        emoji: '🐬',
+        image: 'Animal Images/Dolphin.jpg',
         name: 'Dolphin',
         traits: ['intelligent', 'communicative', 'friendly', 'creative', 'teamwork'],
         description: 'you combine intelligence with exceptional social skills. Like the dolphin, you are communicative, creative and love working in teams. Your ability to create connections and solve problems innovatively makes you unique.'
     },
     owl: {
-        emoji: '🦉',
+        image: 'Animal Images/Owl.jpg',
         name: 'Owl',
         traits: ['wise', 'observant', 'intelligent', 'strategic', 'patient'],
         description: 'you possess remarkable wisdom and exceptional analytical ability. Like the owl, you observe carefully before acting and see details others miss. Your intelligence and patience in analyzing complex situations make you a valuable advisor to the team.'
     },
     bear: {
-        emoji: '🐻',
+        image: 'Animal Images/Bear.jpg',
         name: 'Bear',
         traits: ['protective', 'courageous', 'reliable', 'leader', 'determined'],
         description: 'you possess admirable inner strength and commanding presence. Like the bear, you are protective, courageous and reliable. Your unwavering determination and ability to face challenges head-on inspire security in the team. You are resilient and handle pressure exemplarily.'
     },
     horse: {
-        emoji: '🐴',
+        image: 'Animal Images/Horse.jpg',
         name: 'Horse',
         traits: ['fast', 'energetic', 'determined', 'hardworking', 'reliable'],
         description: 'you possess impressive energy and unwavering determination. Like the horse, you are fast, strong and reliable. Your ability to maintain a consistent pace and overcome long journeys demonstrates your endurance and commitment to goals.'
@@ -121,7 +121,7 @@ const questions = [
             { text: 'Achieving ambitious goals and results', traits: ['ambitious', 'visionary', 'decisive'] },
             { text: 'Helping and protecting my team', traits: ['protective', 'loyal', 'friendly'] },
             { text: 'Learning and constantly evolving', traits: ['curious', 'transformative', 'intelligent'] },
-            { text: 'Doing a job well done and organized', traits: ['hardworking', 'dedicated', 'organized'] }
+            { text: 'Getting the job done well', traits: ['hardworking', 'dedicated', 'organized'] }
         ]
     },
     {
@@ -224,7 +224,7 @@ function showResult() {
     quizScreen.classList.remove('active');
     resultScreen.classList.add('active');
 
-    animalEmoji.textContent = bestMatch.emoji;
+    animalEmoji.innerHTML = `<img src="${bestMatch.image}" alt="${bestMatch.name}">`;
     resultTitle.textContent = `Your inner animal is ${bestMatch.name}!`;
     resultDescription.textContent = `${userName}, ${bestMatch.description}`;
 }
