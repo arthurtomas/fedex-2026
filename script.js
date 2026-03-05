@@ -1,67 +1,67 @@
 // Animal definitions and their characteristics
 const animals = {
     eagle: {
-        image: 'Animal Images/Bald Eagle.jpg',
+        image: 'animal-images/Bald Eagle.jpg',
         name: 'Eagle',
         traits: ['visionary', 'leader', 'strategic', 'independent', 'ambitious'],
         description: 'you possess exceptional strategic vision and see opportunities where others see obstacles. Like the eagle that flies high, you have a broad perspective of situations and natural leadership ability. Your ambition and determination lead you to reach great heights.'
     },
     lion: {
-        image: 'Animal Images/Lion.jpg',
+        image: 'animal-images/Lion.jpg',
         name: 'Lion',
         traits: ['leader', 'courageous', 'confident', 'protective', 'decisive'],
         description: 'you demonstrate courage and confidence in your decisions. Like the lion, you are a natural leader who inspires and protects your team. Your commanding presence and ability to make difficult decisions make you someone people trust.'
     },
     wolf: {
-        image: 'Animal Images/Wolf.jpg',
+        image: 'animal-images/Wolf.jpg',
         name: 'Wolf',
         traits: ['loyal', 'teamwork', 'strategic', 'protective', 'communicative'],
         description: 'you deeply value teamwork and loyalty. Like the wolf that hunts in packs, you understand the power of collaboration and are a reliable team member. Your ability to communicate and work together brings strength to the group.'
     },
     bee: {
-        image: 'Animal Images/Bee.jpg',
+        image: 'animal-images/Bee.jpg',
         name: 'Bee',
         traits: ['hardworking', 'organized', 'collaborative', 'dedicated', 'productive'],
         description: 'you are extremely dedicated and productive in what you do. Like the bee that works tirelessly for the hive, you consistently contribute to collective success. Your organization and focus on results are admirable and inspiring.'
     },
     rabbit: {
-        image: 'Animal Images/rabbit.jpg',
+        image: 'animal-images/rabbit.jpg',
         name: 'Rabbit',
         traits: ['agile', 'creative', 'adaptable', 'energetic', 'fast'],
         description: 'you are agile and adapt quickly to new situations. Like the rabbit, you have contagious energy and creativity to find innovative solutions. Your ability to think fast and act with ease sets you apart in dynamic environments.'
     },
     dog: {
-        image: 'Animal Images/Dog.jpg',
+        image: 'animal-images/Dog.jpg',
         name: 'Dog',
         traits: ['loyal', 'friendly', 'teamwork', 'dedicated', 'protective'],
         description: 'you are extremely loyal and reliable. Like the dog, you are the team\'s best friend, always present and dedicated. Your friendly nature and willingness to help create a positive environment around you.'
     },
     cat: {
-        image: 'Animal Images/Cat.jpg',
+        image: 'animal-images/Cat.jpg',
         name: 'Cat',
         traits: ['independent', 'curious', 'observant', 'strategic', 'adaptable'],
         description: 'you possess admirable independence and natural curiosity. Like the cat, you are observant and strategic, analyzing situations before acting. Your ability to work autonomously and adapt to different contexts is impressive.'
     },
     dolphin: {
-        image: 'Animal Images/Dolphin.jpg',
+        image: 'animal-images/Dolphin.jpg',
         name: 'Dolphin',
         traits: ['intelligent', 'communicative', 'friendly', 'creative', 'teamwork'],
         description: 'you combine intelligence with exceptional social skills. Like the dolphin, you are communicative, creative and love working in teams. Your ability to create connections and solve problems innovatively makes you unique.'
     },
     owl: {
-        image: 'Animal Images/Owl.jpg',
+        image: 'animal-images/Owl.jpg',
         name: 'Owl',
         traits: ['wise', 'observant', 'intelligent', 'strategic', 'patient'],
         description: 'you possess remarkable wisdom and exceptional analytical ability. Like the owl, you observe carefully before acting and see details others miss. Your intelligence and patience in analyzing complex situations make you a valuable advisor to the team.'
     },
     bear: {
-        image: 'Animal Images/Bear.jpg',
+        image: 'animal-images/Bear.jpg',
         name: 'Bear',
         traits: ['protective', 'courageous', 'reliable', 'leader', 'determined'],
         description: 'you possess admirable inner strength and commanding presence. Like the bear, you are protective, courageous and reliable. Your unwavering determination and ability to face challenges head-on inspire security in the team. You are resilient and handle pressure exemplarily.'
     },
     horse: {
-        image: 'Animal Images/Horse.jpg',
+        image: 'animal-images/Horse.jpg',
         name: 'Horse',
         traits: ['fast', 'energetic', 'determined', 'hardworking', 'reliable'],
         description: 'you possess impressive energy and unwavering determination. Like the horse, you are fast, strong and reliable. Your ability to maintain a consistent pace and overcome long journeys demonstrates your endurance and commitment to goals.'
