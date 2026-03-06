@@ -160,6 +160,7 @@ const questions = [
 let currentQuestion = 0;
 let userName = '';
 let userTraits = {};
+let isLeader = false;
 
 // DOM Elements
 const welcomeScreen = document.getElementById('welcome-screen');
@@ -185,6 +186,10 @@ function startQuiz() {
         alert('Please enter your name to start!');
         return;
     }
+
+    // Get leadership position value
+    const leadershipRadio = document.querySelector('input[name="leadership"]:checked');
+    isLeader = leadershipRadio.value === 'yes';
 
     welcomeScreen.classList.remove('active');
     quizScreen.classList.add('active');
@@ -230,7 +235,15 @@ function showResult() {
     let bestMatch = null;
     let highestScore = 0;
 
+    // Define leadership animals
+    const leadershipAnimals = ['eagle', 'lion', 'wolf', 'dog', 'owl'];
+
     Object.entries(animals).forEach(([key, animal]) => {
+        // If user is a leader, only consider leadership animals
+        if (isLeader && !leadershipAnimals.includes(key)) {
+            return;
+        }
+
         let score = 0;
         animal.traits.forEach(trait => {
             score += userTraits[trait] || 0;
@@ -297,7 +310,12 @@ function resetQuiz() {
     currentQuestion = 0;
     userTraits = {};
     userName = '';
+    isLeader = false;
     userNameInput.value = '';
+
+    // Reset leadership radio button
+    const noRadio = document.querySelector('input[name="leadership"][value="no"]');
+    if (noRadio) noRadio.checked = true;
 
     resultScreen.classList.remove('active');
     welcomeScreen.classList.add('active');
