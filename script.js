@@ -6,7 +6,7 @@ const animals = {
         traits: ['visionary', 'leader', 'strategic', 'independent', 'ambitious'],
         description: 'you possess exceptional strategic vision and see opportunities where others see obstacles. Like the eagle that flies high, you have a broad perspective of situations and natural leadership ability. Your ambition and determination lead you to reach great heights.',
         percentage: 8,
-        celebrities: ['Jeff Bezos', 'Elon Musk', 'Oprah Winfrey', 'Steve Jobs']
+        celebrities: ['Oprah Winfrey', 'Steve Irwin', 'Walt Disney', 'Robin Williams']
     },
     lion: {
         image: 'animal-images/Lion.jpg',
@@ -14,7 +14,7 @@ const animals = {
         traits: ['leader', 'courageous', 'confident', 'protective', 'decisive'],
         description: 'you demonstrate courage and confidence in your decisions. Like the lion, you are a natural leader who inspires and protects your team. Your commanding presence and ability to make difficult decisions make you someone people trust.',
         percentage: 12,
-        celebrities: ['Barack Obama', 'Winston Churchill', 'Serena Williams', 'Dwayne Johnson']
+        celebrities: ['Dwayne Johnson', 'Serena Williams', 'Lionel Messi', 'Hugh Jackman']
     },
     wolf: {
         image: 'animal-images/Wolf.jpg',
@@ -22,7 +22,7 @@ const animals = {
         traits: ['loyal', 'teamwork', 'strategic', 'protective', 'communicative'],
         description: 'you deeply value teamwork and loyalty. Like the wolf that hunts in packs, you understand the power of collaboration and are a reliable team member. Your ability to communicate and work together brings strength to the group.',
         percentage: 11,
-        celebrities: ['Tim Cook', 'Michelle Obama', 'Tom Hanks', 'Keanu Reeves']
+        celebrities: ['Tom Hanks', 'Keanu Reeves', 'Paul Rudd', 'Sandra Bullock']
     },
     bee: {
         image: 'animal-images/Bee.jpg',
@@ -30,7 +30,7 @@ const animals = {
         traits: ['hardworking', 'organized', 'collaborative', 'dedicated', 'productive'],
         description: 'you are extremely dedicated and productive in what you do. Like the bee that works tirelessly for the hive, you consistently contribute to collective success. Your organization and focus on results are admirable and inspiring.',
         percentage: 15,
-        celebrities: ['Satya Nadella', 'Marie Curie', 'Bill Gates', 'Simone Biles']
+        celebrities: ['Marie Curie', 'Simone Biles', 'Lin-Manuel Miranda', 'Serena Williams']
     },
     rabbit: {
         image: 'animal-images/rabbit.jpg',
@@ -38,7 +38,7 @@ const animals = {
         traits: ['agile', 'creative', 'adaptable', 'energetic', 'fast'],
         description: 'you are agile and adapt quickly to new situations. Like the rabbit, you have contagious energy and creativity to find innovative solutions. Your ability to think fast and act with ease sets you apart in dynamic environments.',
         percentage: 7,
-        celebrities: ['Lady Gaga', 'Richard Branson', 'Ellen DeGeneres', 'Ryan Reynolds']
+        celebrities: ['Lady Gaga', 'Ryan Reynolds', 'Jim Carrey', 'Eddie Murphy']
     },
     dog: {
         image: 'animal-images/Dog.jpg',
@@ -54,7 +54,7 @@ const animals = {
         traits: ['independent', 'curious', 'observant', 'strategic', 'adaptable'],
         description: 'you possess admirable independence and natural curiosity. Like the cat, you are observant and strategic, analyzing situations before acting. Your ability to work autonomously and adapt to different contexts is impressive.',
         percentage: 9,
-        celebrities: ['Albert Einstein', 'Taylor Swift', 'Mark Zuckerberg', 'Nikola Tesla']
+        celebrities: ['Albert Einstein', 'Taylor Swift', 'David Bowie', 'Nikola Tesla']
     },
     dolphin: {
         image: 'animal-images/Dolphin.jpg',
@@ -62,7 +62,7 @@ const animals = {
         traits: ['intelligent', 'communicative', 'friendly', 'creative', 'teamwork'],
         description: 'you combine intelligence with exceptional social skills. Like the dolphin, you are communicative, creative and love working in teams. Your ability to create connections and solve problems innovatively makes you unique.',
         percentage: 10,
-        celebrities: ['Ellen Page', 'Neil deGrasse Tyson', 'Jimmy Fallon', 'Emma Watson']
+        celebrities: ['Emma Watson', 'Neil deGrasse Tyson', 'Ariana Grande', 'Jimmy Fallon']
     },
     owl: {
         image: 'animal-images/Owl.jpg',
@@ -70,7 +70,7 @@ const animals = {
         traits: ['wise', 'observant', 'intelligent', 'strategic', 'patient'],
         description: 'you possess remarkable wisdom and exceptional analytical ability. Like the owl, you observe carefully before acting and see details others miss. Your intelligence and patience in analyzing complex situations make you a valuable advisor to the team.',
         percentage: 6,
-        celebrities: ['Warren Buffett', 'Ruth Bader Ginsburg', 'Stephen Hawking', 'Meryl Streep']
+        celebrities: ['Stephen Hawking', 'Meryl Streep', 'Morgan Freeman', 'Carl Sagan']
     },
     bear: {
         image: 'animal-images/Bear.jpg',
@@ -78,7 +78,7 @@ const animals = {
         traits: ['protective', 'courageous', 'reliable', 'leader', 'determined'],
         description: 'you possess admirable inner strength and commanding presence. Like the bear, you are protective, courageous and reliable. Your unwavering determination and ability to face challenges head-on inspire security in the team. You are resilient and handle pressure exemplarily.',
         percentage: 10,
-        celebrities: ['Arnold Schwarzenegger', 'Angela Merkel', 'Denzel Washington', 'Ronda Rousey']
+        celebrities: ['Denzel Washington', 'Jack Black', 'Terry Crews', 'Jason Momoa']
     },
     horse: {
         image: 'animal-images/Horse.jpg',
