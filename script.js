@@ -176,6 +176,40 @@ const animalEmoji = document.getElementById('animal-emoji');
 const resultTitle = document.getElementById('result-title');
 const resultDescription = document.getElementById('result-description');
 
+// Easter Egg
+let pawClickCount = 0;
+let pawClickTimer = null;
+const pawEmoji = document.getElementById('paw-emoji');
+const easterEggModal = document.getElementById('easter-egg-modal');
+const closeModal = document.querySelector('.close-modal');
+
+pawEmoji.addEventListener('click', function() {
+    pawClickCount++;
+
+    // Reset counter after 2 seconds of inactivity
+    clearTimeout(pawClickTimer);
+    pawClickTimer = setTimeout(() => {
+        pawClickCount = 0;
+    }, 2000);
+
+    // Show easter egg after 7 clicks
+    if (pawClickCount === 7) {
+        easterEggModal.classList.add('active');
+        pawClickCount = 0;
+    }
+});
+
+closeModal.addEventListener('click', function() {
+    easterEggModal.classList.remove('active');
+});
+
+// Close modal when clicking outside
+easterEggModal.addEventListener('click', function(e) {
+    if (e.target === easterEggModal) {
+        easterEggModal.classList.remove('active');
+    }
+});
+
 // Event Listeners
 startBtn.addEventListener('click', startQuiz);
 restartBtn.addEventListener('click', resetQuiz);

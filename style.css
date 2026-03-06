@@ -356,6 +356,106 @@ header h1 {
     }
 }
 
+/* Easter Egg Modal */
+#paw-emoji {
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+#paw-emoji:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+#paw-emoji:active {
+    transform: scale(0.9);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: bounceIn 0.6s;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.creepy-bear-img {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    display: block;
+    animation: creepyShake 2s infinite;
+}
+
+.modal-content h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin: 20px 0 10px;
+}
+
+.modal-content p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes creepyShake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: rotate(-2deg);
+    }
+    20%, 40%, 60%, 80% {
+        transform: rotate(2deg);
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
@@ -393,5 +493,22 @@ header h1 {
 
     .radio-label {
         justify-content: center;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+    }
+
+    .creepy-bear-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
     }
 }
