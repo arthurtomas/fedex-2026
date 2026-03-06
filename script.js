@@ -4,67 +4,89 @@ const animals = {
         image: 'animal-images/Bald Eagle.jpg',
         name: 'Eagle',
         traits: ['visionary', 'leader', 'strategic', 'independent', 'ambitious'],
-        description: 'you possess exceptional strategic vision and see opportunities where others see obstacles. Like the eagle that flies high, you have a broad perspective of situations and natural leadership ability. Your ambition and determination lead you to reach great heights.'
+        description: 'you possess exceptional strategic vision and see opportunities where others see obstacles. Like the eagle that flies high, you have a broad perspective of situations and natural leadership ability. Your ambition and determination lead you to reach great heights.',
+        percentage: 8,
+        celebrities: ['Jeff Bezos', 'Elon Musk', 'Oprah Winfrey', 'Steve Jobs']
     },
     lion: {
         image: 'animal-images/Lion.jpg',
         name: 'Lion',
         traits: ['leader', 'courageous', 'confident', 'protective', 'decisive'],
-        description: 'you demonstrate courage and confidence in your decisions. Like the lion, you are a natural leader who inspires and protects your team. Your commanding presence and ability to make difficult decisions make you someone people trust.'
+        description: 'you demonstrate courage and confidence in your decisions. Like the lion, you are a natural leader who inspires and protects your team. Your commanding presence and ability to make difficult decisions make you someone people trust.',
+        percentage: 12,
+        celebrities: ['Barack Obama', 'Winston Churchill', 'Serena Williams', 'Dwayne Johnson']
     },
     wolf: {
         image: 'animal-images/Wolf.jpg',
         name: 'Wolf',
         traits: ['loyal', 'teamwork', 'strategic', 'protective', 'communicative'],
-        description: 'you deeply value teamwork and loyalty. Like the wolf that hunts in packs, you understand the power of collaboration and are a reliable team member. Your ability to communicate and work together brings strength to the group.'
+        description: 'you deeply value teamwork and loyalty. Like the wolf that hunts in packs, you understand the power of collaboration and are a reliable team member. Your ability to communicate and work together brings strength to the group.',
+        percentage: 11,
+        celebrities: ['Tim Cook', 'Michelle Obama', 'Tom Hanks', 'Keanu Reeves']
     },
     bee: {
         image: 'animal-images/Bee.jpg',
         name: 'Bee',
         traits: ['hardworking', 'organized', 'collaborative', 'dedicated', 'productive'],
-        description: 'you are extremely dedicated and productive in what you do. Like the bee that works tirelessly for the hive, you consistently contribute to collective success. Your organization and focus on results are admirable and inspiring.'
+        description: 'you are extremely dedicated and productive in what you do. Like the bee that works tirelessly for the hive, you consistently contribute to collective success. Your organization and focus on results are admirable and inspiring.',
+        percentage: 15,
+        celebrities: ['Satya Nadella', 'Marie Curie', 'Bill Gates', 'Simone Biles']
     },
     rabbit: {
         image: 'animal-images/rabbit.jpg',
         name: 'Rabbit',
         traits: ['agile', 'creative', 'adaptable', 'energetic', 'fast'],
-        description: 'you are agile and adapt quickly to new situations. Like the rabbit, you have contagious energy and creativity to find innovative solutions. Your ability to think fast and act with ease sets you apart in dynamic environments.'
+        description: 'you are agile and adapt quickly to new situations. Like the rabbit, you have contagious energy and creativity to find innovative solutions. Your ability to think fast and act with ease sets you apart in dynamic environments.',
+        percentage: 7,
+        celebrities: ['Lady Gaga', 'Richard Branson', 'Ellen DeGeneres', 'Ryan Reynolds']
     },
     dog: {
         image: 'animal-images/Dog.jpg',
         name: 'Dog',
         traits: ['loyal', 'friendly', 'teamwork', 'dedicated', 'protective'],
-        description: 'you are extremely loyal and reliable. Like the dog, you are the team\'s best friend, always present and dedicated. Your friendly nature and willingness to help create a positive environment around you.'
+        description: 'you are extremely loyal and reliable. Like the dog, you are the team\'s best friend, always present and dedicated. Your friendly nature and willingness to help create a positive environment around you.',
+        percentage: 14,
+        celebrities: ['Fred Rogers', 'Dolly Parton', 'Chris Pratt', 'Jennifer Aniston']
     },
     cat: {
         image: 'animal-images/Cat.jpg',
         name: 'Cat',
         traits: ['independent', 'curious', 'observant', 'strategic', 'adaptable'],
-        description: 'you possess admirable independence and natural curiosity. Like the cat, you are observant and strategic, analyzing situations before acting. Your ability to work autonomously and adapt to different contexts is impressive.'
+        description: 'you possess admirable independence and natural curiosity. Like the cat, you are observant and strategic, analyzing situations before acting. Your ability to work autonomously and adapt to different contexts is impressive.',
+        percentage: 9,
+        celebrities: ['Albert Einstein', 'Taylor Swift', 'Mark Zuckerberg', 'Nikola Tesla']
     },
     dolphin: {
         image: 'animal-images/Dolphin.jpg',
         name: 'Dolphin',
         traits: ['intelligent', 'communicative', 'friendly', 'creative', 'teamwork'],
-        description: 'you combine intelligence with exceptional social skills. Like the dolphin, you are communicative, creative and love working in teams. Your ability to create connections and solve problems innovatively makes you unique.'
+        description: 'you combine intelligence with exceptional social skills. Like the dolphin, you are communicative, creative and love working in teams. Your ability to create connections and solve problems innovatively makes you unique.',
+        percentage: 10,
+        celebrities: ['Ellen Page', 'Neil deGrasse Tyson', 'Jimmy Fallon', 'Emma Watson']
     },
     owl: {
         image: 'animal-images/Owl.jpg',
         name: 'Owl',
         traits: ['wise', 'observant', 'intelligent', 'strategic', 'patient'],
-        description: 'you possess remarkable wisdom and exceptional analytical ability. Like the owl, you observe carefully before acting and see details others miss. Your intelligence and patience in analyzing complex situations make you a valuable advisor to the team.'
+        description: 'you possess remarkable wisdom and exceptional analytical ability. Like the owl, you observe carefully before acting and see details others miss. Your intelligence and patience in analyzing complex situations make you a valuable advisor to the team.',
+        percentage: 6,
+        celebrities: ['Warren Buffett', 'Ruth Bader Ginsburg', 'Stephen Hawking', 'Meryl Streep']
     },
     bear: {
         image: 'animal-images/Bear.jpg',
         name: 'Bear',
         traits: ['protective', 'courageous', 'reliable', 'leader', 'determined'],
-        description: 'you possess admirable inner strength and commanding presence. Like the bear, you are protective, courageous and reliable. Your unwavering determination and ability to face challenges head-on inspire security in the team. You are resilient and handle pressure exemplarily.'
+        description: 'you possess admirable inner strength and commanding presence. Like the bear, you are protective, courageous and reliable. Your unwavering determination and ability to face challenges head-on inspire security in the team. You are resilient and handle pressure exemplarily.',
+        percentage: 10,
+        celebrities: ['Arnold Schwarzenegger', 'Angela Merkel', 'Denzel Washington', 'Ronda Rousey']
     },
     horse: {
         image: 'animal-images/Horse.jpg',
         name: 'Horse',
         traits: ['fast', 'energetic', 'determined', 'hardworking', 'reliable'],
-        description: 'you possess impressive energy and unwavering determination. Like the horse, you are fast, strong and reliable. Your ability to maintain a consistent pace and overcome long journeys demonstrates your endurance and commitment to goals.'
+        description: 'you possess impressive energy and unwavering determination. Like the horse, you are fast, strong and reliable. Your ability to maintain a consistent pace and overcome long journeys demonstrates your endurance and commitment to goals.',
+        percentage: 8,
+        celebrities: ['Usain Bolt', 'Michael Phelps', 'Cristiano Ronaldo', 'Beyoncé']
     }
 };
 
@@ -227,6 +249,48 @@ function showResult() {
     animalEmoji.innerHTML = `<img src="${bestMatch.image}" alt="${bestMatch.name}">`;
     resultTitle.textContent = `Your inner animal is ${bestMatch.name}!`;
     resultDescription.textContent = `${userName}, ${bestMatch.description}`;
+
+    // Add statistics
+    const statsElement = document.getElementById('stats-info');
+    statsElement.innerHTML = `
+        <div class="stat-badge">
+            <span class="stat-number">${bestMatch.percentage}%</span>
+            <span class="stat-label">of people share your animal</span>
+        </div>
+    `;
+
+    // Add celebrities
+    const celebsElement = document.getElementById('celebrities-list');
+    celebsElement.innerHTML = `
+        <h3>Famous ${bestMatch.name}s</h3>
+        <div class="celebs-grid">
+            ${bestMatch.celebrities.map(celeb => `<div class="celeb-card">${celeb}</div>`).join('')}
+        </div>
+    `;
+
+    // Trigger confetti animation
+    setTimeout(() => {
+        createConfetti();
+    }, 300);
+}
+
+function createConfetti() {
+    const colors = ['#667eea', '#764ba2', '#f093fb', '#4facfe', '#43e97b'];
+    const confettiCount = 50;
+
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDelay = Math.random() * 0.5 + 's';
+        confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+            confetti.remove();
+        }, 4000);
+    }
 }
 
 function resetQuiz() {

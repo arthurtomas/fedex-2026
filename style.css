@@ -221,6 +221,104 @@ header h1 {
     padding: 0 20px;
 }
 
+/* Statistics styling */
+.stats-container {
+    margin: 20px 0;
+}
+
+.stat-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    animation: pulseStats 2s ease-in-out infinite;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+@keyframes pulseStats {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Celebrities styling */
+.celebrities-container {
+    margin: 30px 0;
+    padding: 25px;
+    background: #f8f9ff;
+    border-radius: 15px;
+    border: 2px solid #e8e9ff;
+}
+
+.celebrities-container h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.celebs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.celeb-card {
+    background: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.celeb-card:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Confetti animation */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    z-index: 9999;
+    animation: confettiFall linear forwards;
+    pointer-events: none;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
@@ -237,5 +335,17 @@ header h1 {
     .animal-emoji img {
         width: 180px;
         height: 180px;
+    }
+
+    .celebs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .celebrities-container {
+        padding: 20px;
     }
 }
